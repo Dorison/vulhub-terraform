@@ -108,7 +108,7 @@ ssh -i your-key.pem ubuntu@<your-ec2-public-ip>
 ## 🚀 Future Improvements
 - Support for multiple simultaneous deployments
 - Integration with security scanning tools like Nikto, Nmap
-
+- This repository will be used to build a vulnerable pentest lab in the cloud.
 ---
 
 > This project is intended for **educational and testing purposes** only. Do not expose vulnerable instances to the public without proper firewall rules or protections.
