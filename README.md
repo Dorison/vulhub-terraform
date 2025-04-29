@@ -13,7 +13,6 @@ The project automates the deployment of selected vulnerabilities from Vulhub wit
 ---
 
 ## 🔄 How It Works
-- Terraform provisions an EC2 instance (Ubuntu 24.04) with Docker and Docker Compose pre-installed.
 - A selected vulnerable application is cloned from the Vulhub repository.
 - The application is deployed automatically inside the instance.
 - You can then access and test the vulnerability directly from your browser or tools.
