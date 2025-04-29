@@ -13,6 +13,7 @@ The project automates the deployment of selected vulnerabilities from Vulhub wit
 ---
 
 ## 🔄 How It Works
+- Terraform provisions an EC2 instance (Ubuntu 24.04) with Docker and Docker Compose pre-installed.
 - A selected vulnerable application is cloned from the Vulhub repository.
 - The application is deployed automatically inside the instance.
 - You can then access and test the vulnerability directly from your browser or tools.
@@ -53,7 +54,7 @@ aws configure
 ```
 Or if you are using named profiles:
 ```bash
-aws sso login --profile your-profile-name
+aws login --profile your-profile-name
 ```
 
 ### 2. Configure `terraform.tfvars`
@@ -102,16 +103,9 @@ ssh -i your-key.pem ubuntu@<your-ec2-public-ip>
 
 ---
 
-## 🎓 Learning Goals
-- Build production-like infrastructure as code with Terraform
-- Understand EC2 instance provisioning and user data automation
-- Improve DevOps practices by integrating dynamic configuration selection
-- Practice penetration testing on real-world CVEs in a safe, isolated AWS environment
-
 ---
 
 ## 🚀 Future Improvements
-- Automatic detection of deployed services and open ports
 - Support for multiple simultaneous deployments
 - Integration with security scanning tools like Nikto, Nmap
 
